@@ -13,6 +13,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#game">Game</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -45,6 +46,21 @@
                 <div class="feature-card">
                     <h3>🎯 Focused</h3>
                     <p>Delivering quality results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="game" class="game">
+        <div class="container">
+            <h2>Play Snake!</h2>
+            <p>Test your skills with a classic game</p>
+            <div class="game-container">
+                <canvas id="snakeCanvas" width="400" height="400"></canvas>
+                <div class="game-info">
+                    <p>Score: <span id="score">0</span></p>
+                    <p id="gameStatus">Use arrow keys to play</p>
+                    <button id="startBtn" class="game-btn">Start Game</button>
                 </div>
             </div>
         </div>

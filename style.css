@@ -233,6 +233,92 @@ footer {
     }
 }
 
+/* Game Section */
+.game {
+    padding: 80px 20px;
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.game h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.game > .container > p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+#snakeCanvas {
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+}
+
+.game-info {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-width: 200px;
+}
+
+.game-info p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+#score {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#gameStatus {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.game-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.game-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.game-btn:active {
+    transform: scale(0.98);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
@@ -248,7 +334,18 @@ footer {
     }
 
     .about h2,
-    .contact h2 {
+    .contact h2,
+    .game h2 {
         font-size: 1.8rem;
+    }
+
+    #snakeCanvas {
+        max-width: 90vw;
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .game-container {
+        flex-direction: column;
     }
 }
