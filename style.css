@@ -377,6 +377,15 @@ footer {
     font-weight: 600;
 }
 
+.log-entry.tool-info {
+    background: linear-gradient(135deg, rgba(108, 92, 231, 0.1) 0%, rgba(0, 184, 148, 0.1) 100%);
+    border-left-color: var(--secondary-color);
+}
+
+.log-entry.tool-info h3 {
+    color: var(--secondary-color);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
